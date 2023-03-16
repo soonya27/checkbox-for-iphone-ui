@@ -1,0 +1,63 @@
+h2 {
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+:root {
+    --checkboxWrapWidth: 60px;
+    --checkboxWrapHeight: 34px;
+
+    --checkbox-RoudPadding: 5px;
+    --checkbox-RoudWidth: calc(var(--checkboxWrapHeight) - var(--checkbox-RoudPadding)*2);
+
+    --round-moves: calc((var(--checkboxWrapWidth) - var(--checkbox-RoudPadding)*2) - var(--checkbox-RoudWidth));
+}
+
+.checkbox-wrap {}
+
+.checkbox-wrap input[type="checkbox"] {
+    position: relative;
+    width: var(--checkboxWrapWidth);
+    height: var(--checkboxWrapHeight);
+    border-radius: 20px;
+    background-color: #dcdcdc;
+    appearance: none;
+    vertical-align: middle;
+    transition: background 0.4s;
+    cursor: pointer;
+}
+
+.checkbox-wrap input[type="checkbox"]:after {
+    position: absolute;
+    left: var(--checkbox-RoudPadding);
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    display: block;
+    width: var(--checkbox-RoudWidth);
+    height: var(--checkbox-RoudWidth);
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.4s;
+}
+
+.checkbox-wrap input[type="checkbox"]:checked {
+    background-color: #4095ff;
+}
+
+.checkbox-wrap input[type="checkbox"]:checked:after {
+    transform: translate(var(--round-moves), -50%);
+}
+
+.checkbox-wrap input[type="checkbox"]:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
