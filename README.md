@@ -1,6 +1,6 @@
 # checkbox-for-iphone-ui
 
-### [githubpage](https://soonya27.github.io/modal.js/)
+### [githubpage](https://soonya27.github.io/checkbox-for-iphone-ui/)
 
 
 ### HTML
