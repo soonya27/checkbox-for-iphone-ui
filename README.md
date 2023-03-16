@@ -6,7 +6,10 @@
 ### HTML
 ```html
 <div class="checkbox-wrap">
+    <input type="checkbox">
     <input type="checkbox" checked>
+    <input type="checkbox" disabled>
+    <input type="checkbox" checked disabled>
 </div>
 ```
 
