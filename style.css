@@ -1,3 +1,14 @@
+:root {
+    --checkboxWrapWidth: 60px;
+    --checkboxWrapHeight: 34px;
+
+    --checkbox-RoudPadding: 5px;
+    --checkbox-RoudWidth: calc(var(--checkboxWrapHeight) - var(--checkbox-RoudPadding)*2);
+
+    --round-moves: calc((var(--checkboxWrapWidth) - var(--checkbox-RoudPadding)*2) - var(--checkbox-RoudWidth));
+}
+
+
 h2 {
     padding: 0;
 }
@@ -9,16 +20,6 @@ ul {
 .flex {
     display: flex;
     align-items: center;
-}
-
-:root {
-    --checkboxWrapWidth: 60px;
-    --checkboxWrapHeight: 34px;
-
-    --checkbox-RoudPadding: 5px;
-    --checkbox-RoudWidth: calc(var(--checkboxWrapHeight) - var(--checkbox-RoudPadding)*2);
-
-    --round-moves: calc((var(--checkboxWrapWidth) - var(--checkbox-RoudPadding)*2) - var(--checkbox-RoudWidth));
 }
 
 .checkbox-wrap {}
